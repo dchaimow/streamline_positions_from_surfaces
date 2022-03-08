@@ -126,6 +126,7 @@ if __name__ == '__main__':
     output_fname = sys.argv[6]
     method = sys.argv[7]
     n_jobs = sys.argv[8]
+    print(len(sys.argv))
     if len(sys.argv)==10:
         n_streamlines = sys.argv[9]
     else:
