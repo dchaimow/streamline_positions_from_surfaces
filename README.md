@@ -20,6 +20,6 @@ Command line parameters:
 4. area file pial surface
 5. streamlines file (.tck)
 6. filename of output (MATLAB .mat format)
-7. method: equivol or equisdist
+7. method: equivol or equidist
 8. number of cpus
 9. optional: number of streamlines to process (for debugging)
