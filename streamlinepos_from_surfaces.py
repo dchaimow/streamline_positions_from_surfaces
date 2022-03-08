@@ -7,6 +7,7 @@ from joblib import Parallel, delayed, parallel_backend
 import voxeldepths_from_surfaces as vdfs
 import numpy as np
 from scipy.io import savemat
+import sys
 
 
 def calc_depth_from_surfaces_points(surf_white, area_white, surf_pial, area_pial,
