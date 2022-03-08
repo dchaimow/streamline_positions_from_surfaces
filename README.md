@@ -1,15 +1,15 @@
 ## Requirements
 `pip3 install numpy scipy numba babel joblib scipy`
 
-## Usage
-`python3 streamlinepos_from_surfaces.py \
-../../hemi_surfaces/freesurfer/surf/lh.white \
-../../hemi_surfaces/freesurfer/surf/lh.area \
-../../hemi_surfaces/freesurfer/surf/lh.pial \
-../../hemi_surfaces/freesurfer/surf/lh.area.pial \
-../../track_convert/sub-04_acq-01_rh_v1v2v3_tracking_tracto_mp2rage.tck \
-streamlines_positions.mat \
-equivol \
+## Usage example
+`python3 streamlinepos_from_surfaces.py 
+../../hemi_surfaces/freesurfer/surf/lh.white 
+../../hemi_surfaces/freesurfer/surf/lh.area 
+../../hemi_surfaces/freesurfer/surf/lh.pial 
+../../hemi_surfaces/freesurfer/surf/lh.area.pial 
+../../track_convert/sub-04_acq-01_rh_v1v2v3_tracking_tracto_mp2rage.tck 
+streamlines_positions.mat 
+equivol 
 32`
 
 
