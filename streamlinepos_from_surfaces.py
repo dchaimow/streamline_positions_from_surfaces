@@ -123,14 +123,15 @@ if __name__ == '__main__':
     surf_pial_file = sys.argv[3]
     area_pial_file = sys.argv[4]
     streamlines_file = sys.argv[5]
-    method = sys.argv[6]
-    n_jobs = sys.argv[7]
-    if len(sys.argv)==9:
-        n_streamlines = sys.argv[8]
+    output_fname = sys.argv[6]
+    method = sys.argv[7]
+    n_jobs = sys.argv[8]
+    if len(sys.argv)==10:
+        n_streamlines = sys.argv[9]
     else:
         n_streamlines = 'all'
-    process_streamlinepos_from_surfaces_single_hemi(surf_white_rh_file, area_white_rh_file,
-                                                    surf_pial_rh_file, area_pial_rh_file,
+    process_streamlinepos_from_surfaces_single_hemi(surf_white_file, area_white_file,
+                                                    surf_pial_file, area_pial_file,
                                                     streamlines_file, output_fname,
                                                     method=method,
                                                     grid_d=1, n_jobs=4, n_streamlines=n_streamlines)
