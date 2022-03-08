@@ -125,10 +125,10 @@ if __name__ == '__main__':
     streamlines_file = sys.argv[5]
     output_fname = sys.argv[6]
     method = sys.argv[7]
-    n_jobs = sys.argv[8]
-    print(len(sys.argv))
+    n_jobs = int(sys.argv[8])
+
     if len(sys.argv)==10:
-        n_streamlines = sys.argv[9]
+        n_streamlines = int(sys.argv[9])
     else:
         n_streamlines = 'all'
     process_streamlinepos_from_surfaces_single_hemi(surf_white_file, area_white_file,
