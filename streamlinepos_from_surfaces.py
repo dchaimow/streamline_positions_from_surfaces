@@ -126,7 +126,7 @@ if __name__ == '__main__':
     n_jobs = sys.argv[7]
     if len(sys.argv)==9:
         n_streamlines = sys.argv[8]
-    else
+    else:
         n_streamlines = 'all'
     process_streamlinepos_from_surfaces_single_hemi(surf_white_rh_file, area_white_rh_file,
                                                     surf_pial_rh_file, area_pial_rh_file,
