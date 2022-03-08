@@ -65,9 +65,9 @@ def process_streamlinepos_from_surfaces_single_hemi(surf_white_file, area_white_
                                                     method='equivol',
                                                     grid_d=1, n_jobs=32, n_streamlines='all'):
     # load streamlines
-    streamlines = nib.streamlines.tck.TckFile.load(streamlines_file).streamlines[:100]
-    # if n_streamlines != 'all':
-    #    streamlines = streamlines[:n_streamlines]
+    streamlines = nib.streamlines.tck.TckFile.load(streamlines_file).streamlines
+    if n_streamlines != 'all':
+        streamlines = streamlines[:n_streamlines]
     points_orig_space = np.concatenate(streamlines)
 
     # set grid covering streamline points and transform points to grid coordinates
