@@ -44,7 +44,7 @@ def calc_depth_from_surfaces_points(surf_white, area_white, surf_pial, area_pial
 def define_point_enclosing_grid(points, d):
     # 1st voxel in each dimension should map to corresponding minimum coordinate in points
     # steps are size d, and the number of points if ceil((min_x-max_x)/d):
-    # CHECK, DOES COUNTING START AT 1?
+    # TODO: CHECK, DOES COUNTING START AT 1?
     # x_scanner = min_x(streamline_point) + voxels_idx_x * d
     min_x = np.min(points[:, 0])
     min_y = np.min(points[:, 1])
@@ -135,4 +135,4 @@ if __name__ == '__main__':
                                                     surf_pial_file, area_pial_file,
                                                     streamlines_file, output_fname,
                                                     method=method,
-                                                    grid_d=1, n_jobs=4, n_streamlines=n_streamlines)
+                                                    grid_d=1, n_jobs=n_jobs, n_streamlines=n_streamlines)
