@@ -1,5 +1,5 @@
 ## Requirements
-`pip3 install numpy scipy numba babel joblib scipy`
+`pip3 install numpy scipy numba nibabel joblib scipy`
 
 ## Usage example
 `python3 streamlinepos_from_surfaces.py 
