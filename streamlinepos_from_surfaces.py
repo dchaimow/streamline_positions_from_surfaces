@@ -6,7 +6,7 @@ from numba.typed import List
 from joblib import Parallel, delayed, parallel_backend
 import voxeldepths_from_surfaces as vdfs
 import numpy as np
-from scipy.io import savemat
+from hdf5storage import savemat
 import sys
 
 
@@ -115,7 +115,8 @@ def process_streamlinepos_from_surfaces_single_hemi(surf_white_file, area_white_
     data['sl_faces'] = np.array(faces, dtype=object)
     data['sl_vertices'] = np.array(vertices, dtype=object)
     data['sl_coordinates'] = np.array(streamlines, dtype=object)
-    savemat(output_fname, data)
+    savemat(output_fname, data,format=7.3, matlab_compatible=True, compress=False)
+
 
 if __name__ == '__main__':
     surf_white_file = sys.argv[1]
