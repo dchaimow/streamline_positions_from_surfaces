@@ -4,7 +4,7 @@ import nibabel as nib
 from numba import jit
 from numba.typed import List
 from joblib import Parallel, delayed, parallel_backend
-import voxeldepths_from_surfaces as vdfs
+import vdfs as vdfs
 import numpy as np
 from hdf5storage import savemat
 import sys

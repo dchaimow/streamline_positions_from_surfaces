@@ -1,0 +1,3 @@
+[submodule "vdfs"]
+	path = vdfs
+	url = https://github.com/dchaimow/vdfs
